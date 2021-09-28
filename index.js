@@ -89,7 +89,7 @@ client.connect(err => {//   client.close();
       .then( data => {
         console.log({data});
         const {acknowledged} = data;
-        acknowledged ? res.send(body) : res.send("Not inserted")
+        acknowledged ? getAllUsers(req, res) : res.send("Not inserted")
       })
       .catch(err => res.send(err));
     });
