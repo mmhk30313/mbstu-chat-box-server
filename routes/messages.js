@@ -1,11 +1,10 @@
 const router = require("express").Router();
 const Message = require("../models/Message");
 
-//add
+// add message
 
 router.post("/", async (req, res) => {
   const newMessage = new Message(req.body);
-
   try {
     const savedMessage = await newMessage.save();
     res.status(200).json(savedMessage);
@@ -14,7 +13,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-//get
+// get messages by conversation id
 
 router.get("/:conversationId", async (req, res) => {
   try {
