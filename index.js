@@ -19,7 +19,7 @@ const fs = require('fs-extra');
 const fileUpload = require('express-fileupload');
 
 // Our Socket
-const client_url = process.env.CLIENT_URL;
+
 const io = require("socket.io")(8900, {
   cors: {
     // origin: "http://localhost:3000",
