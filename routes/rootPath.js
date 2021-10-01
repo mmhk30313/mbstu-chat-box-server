@@ -57,7 +57,7 @@ router.get("/", (req, res) => {
   font-family: monospace;
   font-size: 30pt;">
  <p>WELCOME TO MBSTU CHATBOX</p>
- <p>To see server api, search by "url/api/path"</p>
+ <p>To see server api, search by "/api/path"</p>
 </h1>`).status(200);
 });
 
