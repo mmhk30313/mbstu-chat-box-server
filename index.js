@@ -19,7 +19,13 @@ const fs = require('fs-extra');
 const fileUpload = require('express-fileupload');
 
 // Our Socket
-
+// const http = require("http");
+// // const socketIO = require("socket.io");
+// // our server instance
+// const server = http.createServer(app);
+// const { Server } = require("socket.io");
+// const io = new Server(server);
+// old
 const io = require("socket.io")(8900, {
   cors: {
     // origin: "http://localhost:3000",
@@ -44,7 +50,7 @@ const getUser = (userId) => {
 };
 
 io.on("connection", (socket) => {
-  // when connect
+  // When connect
   console.log("a user connected.");
 
   // take userId and socketId from user
@@ -62,7 +68,7 @@ io.on("connection", (socket) => {
     });
   });
 
-  // when disconnect
+  // When disconnect
   socket.on("disconnect", () => {
     console.log("a user disconnected!");
     removeUser(socket.id);
@@ -70,7 +76,12 @@ io.on("connection", (socket) => {
   });
 });
 
-
+io.on('connection', (socket) => {
+  console.log('a user connected');
+  socket.on('disconnect', () => {
+    console.log('user disconnected');
+  });
+});
 // Our Express
 mongoose.connect(
   process.env.MONGO_URL,
