@@ -28,7 +28,7 @@ const fileUpload = require('express-fileupload');
 // old
 const io = require("socket.io")(8900, {
   cors: {
-    origin: false,
+    origin: "*",
     // origin: true,
     // origin: "https://mbstu-chat-box.web.app",
   },
