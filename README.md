@@ -12,32 +12,32 @@
 * To use our server code
     * <h2>
 ```diff
-- git clone https://github.com/Mehedi-Developer/mbstu-chat-box-server.git
+- git clone https://github.com/Mehedi-Developer/mbstu-chat-box-server.git + Enter
 ```
 </h2>
 
 * Go to server code
     * <h2>
 ```diff
-- cd mbstu-chat-box-server
+- cd mbstu-chat-box-server + Enter
 ```
 </h2>
 
 * To install node_modules which files make run our server code
     * <h2>
 ```diff
-+ npm install
++ npm install + Enter
 ```
 
 </h2>
 
-* To run our server code in (http://localhost:4000/)[http://localhost:4000/]
+* To run our server code in http://localhost:4000/
     * <h2>
 ```diff
-+ npm start
++ npm start + Enter
 ```
 </h2>
 
 ## After that run our client code
 
-### See (https://github.com/mmhk30313/mbstu-chat-box.git)[https://github.com/mmhk30313/mbstu-chat-box.git]
+### See https://github.com/mmhk30313/mbstu-chat-box.git
