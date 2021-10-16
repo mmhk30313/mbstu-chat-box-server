@@ -6,4 +6,4 @@
     * vs code
     * node
     * git
-* $ `\textcolor{teal}{ \text{ Eq.(3-5) in the main text} } `$
+* - git clone
