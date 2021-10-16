@@ -1,6 +1,7 @@
-# Project Name: 
+# Project name: 
     mbstu-chat-box
 
+# Live link of server code https://mbstu-chat-box.herokuapp.com
 # Getting started server code
 * Should be installed as our executable files
     * vs code
