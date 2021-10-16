@@ -6,4 +6,4 @@
     * vs code
     * node
     * git
-* ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=abcd)
+* $ `\textcolor{teal}{ \text{ Eq.(3-5) in the main text} } `$
