@@ -6,4 +6,12 @@
     * vs code
     * node
     * git
-* - git clone
+* <h2>
+
+```diff
+- git clone
++ green
+! orange
+```
+
+</h2>
