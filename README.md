@@ -4,9 +4,9 @@
 # Live link of server code https://mbstu-chat-box.herokuapp.com
 # Getting started server code
 * Should be installed as our executable files
-    * vs code
-    * node
-    * git
+    * vs code - [here](https://code.visualstudio.com/download)
+    * node - [here](https://nodejs.org/en/download/)
+    * git - [here](https://git-scm.com/download/win)
 * Open your windows command prompt
     * To create a directory - mkdir directory_name + Enter
     * Go to directory - cd directory_name + Enter
