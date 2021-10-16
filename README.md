@@ -10,21 +10,21 @@
     * To create a directory - mkdir directory_name + Enter
     * Go to directory - cd directory_name + Enter
 * To use our server code
-<h2>
+* <h2>
 ```diff
 - git clone https://github.com/Mehedi-Developer/mbstu-chat-box-server.git + Enter
 ```
 </h2>
 
 * Go to server code
-<h2>
+* <h2>
 ```diff
 - cd mbstu-chat-box-server + Enter
 ```
 </h2>
 
 * To install node_modules which files make run our server code
-<h2>
+* <h2>
 ```diff
 + npm install + Enter
 ```
@@ -32,7 +32,7 @@
 </h2>
 
 * To run our server code in http://localhost:4000/
-<h2>
+* <h2>
 ```diff
 + npm start + Enter
 ```
