@@ -28,9 +28,10 @@ const fileUpload = require('express-fileupload');
 // old
 const io = require("socket.io")(8900, {
   cors: {
-    origin: "*",
-    // origin: true,
+    // origin: "*",
+    origin: true,
     // origin: "https://mbstu-chat-box.web.app",
+    origin: "http://localhost:3000",
   },
 });
 
@@ -93,6 +94,7 @@ mongoose.connect(
 // app.use("/images", express.static(path.join(__dirname, "public/images")));
 
 //middleware
+
 app.use(express.json());
 // app.use('/uploads', express.static('uploads'));
 app.use(helmet());
