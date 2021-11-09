@@ -2,21 +2,21 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-const helmet = require("helmet");
-const morgan = require("morgan");
+// const helmet = require("helmet");
+// const morgan = require("morgan");
 const rootPath = require("./routes/rootPath");
 const userRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
 const postRoute = require("./routes/posts");
 const conversationRoute = require("./routes/conversations");
 const messageRoute = require("./routes/messages");
-const router = express.Router();
+// const router = express.Router();
 // const path = require("path");
 const cors = require('cors');
 const bodyParser = require("body-parser");
 dotenv.config();
-const fs = require('fs-extra');
-const fileUpload = require('express-fileupload');
+// const fs = require('fs-extra');
+// const fileUpload = require('express-fileupload');
 
 // Our Socket
 // const http = require("http");
@@ -25,6 +25,7 @@ const fileUpload = require('express-fileupload');
 // const server = http.createServer(app);
 // const { Server } = require("socket.io");
 // const io = new Server(server);
+
 // old
 const io = require("socket.io")(8900, {
   cors: {
@@ -97,12 +98,12 @@ mongoose.connect(
 
 app.use(express.json());
 // app.use('/uploads', express.static('uploads'));
-app.use(helmet());
-app.use(morgan("common"));
+// app.use(helmet());
+// app.use(morgan("common"));
 app.use(cors());
 app.use(bodyParser.json());
-app.use(express.static('uploads'));
-app.use(fileUpload());
+// app.use(express.static('uploads'));
+// app.use(fileUpload());
 app.use(cors({origin: true}));
 
 app.use(rootPath);
